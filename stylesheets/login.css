@@ -1,0 +1,96 @@
+/* login.css */
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Font family for the whole page */
+    line-height: 1.6; /* Line height for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #141414; /* Dark background color to reflect cinema ambiance */
+    color: #f0f0f0; /* Light text color for contrast */
+    display: flex; /* Use Flexbox to enable centering */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full screen height */
+}
+
+/* Login Container */
+.login-container {
+    background-color: #222; /* Dark background for the form */
+    padding: 30px; /* Padding inside the login container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+    text-align: center; /* Center text alignment */
+    width: 100%; /* Full width to ensure responsiveness */
+    max-width: 400px; /* Maximum width to keep it looking good on larger screens */
+}
+
+/* Heading */
+h1 {
+    color: #ffcc00; /* Gold color for the heading */
+    margin-bottom: 20px; /* Margin below the heading */
+}
+
+/* Form Group */
+.form-group {
+    display: flex; /* Use Flexbox for input containers */
+    flex-direction: column; /* Stack label and input vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 15px; /* Space between form inputs */
+}
+
+/* Labels */
+label {
+    display: block; /* Block level for better layout */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"] {
+    width: 100%; /* Full width inputs */
+    max-width: 280px; /* Limit width to keep it centered and looking good */
+    padding: 10px; /* Padding inside inputs */
+    border: 2px solid #ffcc00; /* Gold border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    background-color: #333; /* Dark input background */
+    color: #fff; /* White text for contrast */
+}
+
+/* Button */
+button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #ffcc00; /* Gold button background */
+    color: #141414; /* Dark text color */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #e6b800; /* Darker gold on hover */
+}
+
+/* Register Link */
+.register-link {
+    color: #ffcc00; /* Gold color */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline with block-level properties */
+    margin-top: 15px; /* Space above the link */
+}
+
+/* Register Link Hover Effect */
+.register-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+}

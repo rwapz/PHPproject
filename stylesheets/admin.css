@@ -1,0 +1,37 @@
+/* admin.css */
+
+/* Admin Container */
+.admin-container {
+    max-width: 1200px;
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background-color: #222; /* Admin section background */
+    border-radius: 8px; /* Rounded corners */
+    color: #f0f0f0; /* Text color */
+}
+
+/* Table Styles */
+table, th, td {
+    margin: auto;
+    border: 1px solid #fff; /* White border for visibility */
+    border-spacing: 0; /* Remove spacing */
+    padding: 10px; /* Padding inside cells */
+}
+
+th {
+    background-color: #444; /* Dark background for table header */
+}
+
+/* Link Colors */
+a {
+    color: #ffcc00; /* Gold color for links */
+}
+
+/* Additional Styles */
+.add-film {
+    margin-top: 20px; /* Space above the add link */
+}
+
+.logout {
+    margin-top: 20px; /* Space for logout link */
+}

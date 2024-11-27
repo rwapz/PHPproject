@@ -1,0 +1,64 @@
+/* cart.css */
+
+/* General Styling for Cart Page */
+body {
+    background-color: #1c1c1c; /* Dark background for cart page */
+    color: #f0f0f0; /* Light text color for readability */
+    font-family: 'Arial', sans-serif; /* Consistent font across pages */
+    padding: 20px; /* Padding around the body */
+}
+
+/* Cart Header */
+h1 {
+    color: #ffcc00; /* Gold header color */
+    text-align: center; /* Center align the header */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Cart Item Container */
+.cart-list {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+}
+
+/* Individual Cart Items */
+.cart-item {
+    background-color: #333; /* Dark background for items */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px; /* Spacing between items */
+    padding: 15px; /* Padding inside items */
+    width: 80%; /* Fixed width for items */
+    text-align: left; /* Left-align text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+/* Quantity Buttons */
+.quantity-btn {
+    background-color: #ffcc00; /* Button background color */
+    color: #000; /* Button text color */
+    border: none; /* Remove borders */
+    padding: 10px; /* Button padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    margin: 0 5px; /* Space between buttons */
+    font-size: 16px; /* Button font size */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.quantity-btn:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
+
+/* Cart Icon */
+.cart-icon {
+    width: 50px; /* Size of the cart icon */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .cart-item {
+        width: 100%; /* Full width on small screens */
+    }
+}

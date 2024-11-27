@@ -1,0 +1,78 @@
+/* Modal/Cover for video */
+#videoModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    justify-content: center; /* Center contents */
+    align-items: center; /* Center vertically */
+}
+
+/* Video element styles */
+video {
+    max-width: 90%; /* Full width on small screens */
+    max-height: 90%; /* Maintain aspect ratio */
+}
+
+.film-list {
+    display: flex; /* Use Flexbox */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical overflow */
+    padding: 10px; /* Add padding */
+    margin: 0; /* Remove default margins */
+    list-style: none; /* Remove list styling */
+}
+
+/* Optional: Add a scrollbar styling for webkit browsers (Chrome, Safari) */
+.film-list::-webkit-scrollbar {
+    height: 8px; /* Height of horizontal scrollbar */
+}
+
+.film-list::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar; use any color you want */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.film-list::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar on hover */
+}
+
+.film {
+    flex: 0 0 auto; /* Prevent items from shrinking and allow them to maintain their own width */
+    width: 200px; /* Fixed width for each film item */
+    margin: 0 10px; /* Space around films */
+    background-color: #333; /* Dark background */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Clip overflow */
+    text-align: center; /* Center text */
+    transition: transform 0.3s; /* Smooth hover */
+}
+
+.film img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space */
+}
+
+.film h3 {
+    color: #ffcc00; /* Gold color */
+    margin: 10px 0; /* Margin around title */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .film {
+        width: 150px; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .film {
+        width: 100px; /* Further adjustment for mobile */
+    }
+}

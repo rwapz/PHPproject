@@ -1,0 +1,24 @@
+/* Ensure the body and html take full height */
+html, body {
+    height: 100%; /* Full height */
+}
+
+/* Wrapper for the entire content */
+.wrapper {
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack child elements vertically */
+    min-height: 100vh; /* Minimum height to fill the viewport */
+}
+
+/* Main content area */
+.main-content {
+    flex: 1; /* Allow main content to grow and take available space */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center; /* Center text in footer */
+    padding: 20px; /* Padding around footer */
+    background-color: #222; /* Dark footer background */
+    color: #f0f0f0; /* Light text color */
+}

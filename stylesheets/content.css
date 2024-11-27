@@ -1,0 +1,108 @@
+/* styles.css */
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Font family for the whole page */
+    line-height: 1.6; /* Line height for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #141414; /* Dark background color to reflect cinema ambiance */
+    color: #f0f0f0; /* Light text color for contrast */
+}
+
+/* Header Styling */
+header {
+    background-color: #222; /* Dark header background */
+    padding: 20px; /* Padding for the header */
+    position: relative; /* Positioning for nav items */
+}
+
+.container {
+    max-width: 1200px; /* Container width */
+    margin: 0 auto; /* Center container */
+    display: flex; /* Flexbox for header alignment */
+    justify-content: space-between; /* Space between title and nav */
+    align-items: center; /* Align items vertically */
+}
+
+h1 {
+    color: #ffcc00; /* Gold color for title */
+    margin: 0; /* No margin */
+}
+
+nav ul {
+    list-style: none; /* No bullet points */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+    display: flex; /* Flexbox for horizontal layout */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between nav items */
+}
+
+nav a {
+    color: #ffcc00; /* Gold link color */
+    text-decoration: none; /* No underline on links */
+    padding: 10px 15px; /* Padding around links */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+}
+
+/* Link Hover Effects */
+nav a:hover {
+    background-color: rgba(255, 204, 0, 0.2); /* Light gold background on hover */
+    color: #ffffff; /* Change text color on hover */
+}
+
+/* Welcome section */
+.welcome {
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding around welcome section */
+}
+
+/* Featured Films Section */
+.featured-films {
+    padding: 20px; /* Padding around featured films */
+    background-color: #333; /* Darker section background */
+}
+
+.film-list {
+    display: flex; /* Flexbox for film layout */
+    justify-content: space-around; /* Space between films */
+    flex-wrap: wrap; /* Wrap films to new lines if needed */
+}
+
+.film {
+    background-color: #444; /* Film item background */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px; /* Margin between film items */
+    padding: 10px; /* Padding inside film items */
+    width: calc(30% - 20px); /* Width calculation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.film img {
+    width: 100%; /* Full width images */
+    border-radius: 8px; /* Rounded image corners */
+}
+
+footer {
+    text-align: center; /* Center text in footer */
+    padding: 20px; /* Padding around footer */
+    background-color: #222; /* Dark footer background */
+    position: relative; /* Positioning for the footer */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full footer width */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stacked layout for small screens */
+        align-items: center; /* Center nav items */
+    }
+
+    .film {
+        width: calc(100% - 20px); /* Full width for film items on small screens */
+    }
+}

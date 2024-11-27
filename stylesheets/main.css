@@ -1,0 +1,164 @@
+/* main.css */
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Font family for the whole page */
+    line-height: 1.6; /* Line height for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #141414; /* Dark background color to reflect cinema ambiance */
+    color: #f0f0f0; /* Light text color for contrast */
+    display: flex; /* Flexbox for body layout */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Header Styling */
+header {
+    background-color: #222; /* Dark header background */
+    padding: 20px; /* Padding for the header */
+    position: relative; /* For positioning elements within the header */
+}
+
+/* Container for header elements */
+.container {
+    max-width: 1200px; /* Container width */
+    margin: 0 auto; /* Center container */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between title and nav */
+    align-items: center; /* Align items vertically in the middle */
+}
+
+/* Heading Styles */
+h1 {
+    color: #ffcc00; /* Gold color for title */
+    margin: 0; /* No margin */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none; /* No bullet points */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+    display: flex; /* Flexbox for horizontal navigation */
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between nav items */
+}
+
+nav a {
+    color: #ffcc00; /* Gold link color */
+    text-decoration: none; /* No underline on links */
+    padding: 10px 15px; /* Padding around links */
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effect */
+}
+
+/* Link Hover Effects */
+nav a:hover {
+    background-color: rgba(255, 204, 0, 0.2); /* Light gold background on hover */
+    color: #ffffff; /* Change text color on hover */
+}
+
+/* Welcome section */
+.welcome {
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding around welcome section */
+}
+
+/* Admin Container Styles */
+.admin-container {
+    padding: 20px; /* Padding for admin section */
+    background-color: #222; /* Admin section background */
+    border-radius: 8px; /* Rounded corners */
+    color: #f0f0f0; /* Text color */
+}
+
+/* Featured Films Section */
+.featured-films {
+    padding: 20px; /* Padding around featured films */
+    background-color: #333; /* Darker section background */
+}
+
+.film-list {
+    display: flex; /* Flexbox for film layout */
+    justify-content: space-around; /* Space between films */
+    flex-wrap: wrap; /* Wrap films to new lines if needed */
+}
+
+.film {
+    background-color: #444; /* Film item background */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px; /* Margin between film items */
+    padding: 10px; /* Padding inside film items */
+    width: calc(30% - 20px); /* Width calculation */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.film img {
+    width: 100%; /* Full width images */
+    border-radius: 8px; /* Rounded image corners */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center text in footer */
+    padding: 20px; /* Padding around footer */
+    background-color: #222; /* Dark footer background */
+    position: relative; /* Positioning for the footer */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full footer width */
+}
+
+/* Table Styles */
+table,
+th,
+td {
+    margin: auto; /* Center tables */
+    border: 1px solid #fff; /* White border for visibility */
+    border-spacing: 0; /* Remove spacing */
+    padding: 10px; /* Padding inside cells */
+}
+
+th {
+    background-color: #444; /* Dark background for table header */
+}
+
+/* Link Styles */
+a {
+    color: #ffcc00; /* Gold color for links */
+    text-decoration: none; /* No underline */
+}
+
+.link-box {
+    text-align: center; /* Center align links */
+    margin-top: 20px; /* Space above link box */
+}
+
+.link-box a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Error Message Styles */
+.error {
+    color: red; /* Red color for error messages */
+    font-size: 14px; /* Font size for error messages */
+    margin-bottom: 15px; /* Space below messages */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stacked layout for small screens */
+        align-items: center; /* Center nav items */
+    }
+
+    .film {
+        width: calc(100% - 20px); /* Full width for film items on small screens */
+    }
+
+    .container {
+        flex-direction: column; /* Stack container items vertically on small screens */
+        align-items: flex-start; /* Align items to start */
+    }
+}

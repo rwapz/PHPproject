@@ -1,0 +1,8 @@
+.menu-item img {
+    width: 90px;      /* Set to a reasonable width for menu items */
+    height: auto;     /* Maintain aspect ratio */
+    max-height: 90px; /* Limit height */
+    object-fit: cover; /* Ensure cropping while maintaining aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+    border-radius: 5px; /* Optional: rounded corners */
+}
